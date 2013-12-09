@@ -1,7 +1,6 @@
 var hid = require('hidstream');
 
 var matches = function(event, key) {
-  console.log(event, key);
   return event.modKeys.indexOf(key) !== -1 || event.charCodes.indexOf(key) !== -1 || event.keyCodes.indexOf(parseInt(key)) !== -1;
 };
 

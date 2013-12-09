@@ -8,7 +8,10 @@ var path = kbs.filter(function(kb) {
 var aapl = kb.device(path);
 
 var mapping = {
-  'ctrl+1': '/Volumes/Pirate/soundz/air horn (club sample).mp3'
+  'ctrl+1': '/Volumes/Pirate/soundz/air-horn.mp3',
+  'ctrl+2': '/Volumes/Pirate/soundz/shotgun-reload.mp3',
+  'ctrl+3': '/Volumes/Pirate/soundz/shotgun-old-school.mp3',
+  'ctrl+4': '/Volumes/Pirate/soundz/shells-falling.mp3'
 };
 
 Object.keys(mapping).forEach(function(code){

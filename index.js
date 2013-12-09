@@ -17,7 +17,7 @@ module.exports = {
       keys = keys.split('+');
       dev.on("data", function(dat){
         var matcher = matches.bind(null, dat);
-        if (!keys.every(matcher)) return;
+        if (keys !== '*' && !keys.every(matcher)) return;
         fn(dat);
       });
     };

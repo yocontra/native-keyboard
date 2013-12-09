@@ -26,7 +26,7 @@ var kb = require('native-keyboard');
 var path = kb.getDevices()[0].path;
 var myKeyboard = kb.device(device);
 
-myKeyboard.on('ctrl+w+a+s+d', function(evt){
+myKeyboard.onKey('ctrl+w+a+s+d', function(evt){
   // they pressed ctrl and wasd at the same time
 });
 ```

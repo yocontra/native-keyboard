@@ -12,7 +12,7 @@ describe('native-keyboard', function() {
     });
   });
 
-  describe('on(wasd)', function() {
+  describe('onKey(wasd)', function() {
     it('should trigger the function', function(done) {
       var kbs = kb.getDevices();
       var path = kbs.filter(function(kb) {

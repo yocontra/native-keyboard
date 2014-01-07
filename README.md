@@ -33,7 +33,7 @@ myKeyboard.onKey('ctrl+w+a+s+d', function(evt){
 
 ## Examples
 
-You can view more examples in the [example folder.](https://github.com/wearefractal/native-keyboard/tree/master/examples)
+You can view more examples in the [example folder.](https://github.com/Contra/native-keyboard/tree/master/examples)
 
 ## LICENSE
 

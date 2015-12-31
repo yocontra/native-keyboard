@@ -16,12 +16,13 @@ describe('native-keyboard', function() {
     it('should trigger the function', function(done) {
       var kbs = kb.getDevices();
       var path = kbs.filter(function(kb) {
-        return kb.product === 'Apple Wireless Keyboard';
+        return kb.product === 'Apple Wireless Keyboard' ||
+          kb.product === 'Apple Internal Keyboard / Trackpad';
       })[0].path;
       var aapl = kb.device(path);
       should.exist(aapl);
 
-      aapl.onKey('ctrl+82', function(){
+      aapl.onKey('ctrl', function(){
         done();
       });
     });
